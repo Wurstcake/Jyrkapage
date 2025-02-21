@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jyrka</title>
+
+    <style>
+        video {
+            max-width: 100%;
+            /* Ensures it never exceeds the container's width */
+            max-height: 100vh;
+            /* Ensures it never exceeds the viewport's height */
+            width: auto;
+            height: auto;
+        }
+    </style>
 </head>
-<body>
+
+<body style="background-color: black;">
     <video controls preload="metadata">
         <source src="/videos/jyrka-dancing.mp4" type="video/mp4">
+        Your browser sucks
     </video>
-    Your browser sucks
 </body>
+
 </html>

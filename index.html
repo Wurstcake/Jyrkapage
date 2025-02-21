@@ -23,7 +23,17 @@
         <source src="/videos/jyrka-dancing.mp4" type="video/mp4">
         Your browser sucks
     </video>
-
+    <script>
+        const video = document.getElementById('myVideo');
+        
+        // When the video is ready to play, wait 3 seconds and then attempt to unmute it
+        video.addEventListener('canplay', () => {
+          setTimeout(() => {
+            video.muted = false;
+            console.log('Video unmuted automatically after delay');
+          }, 3000); // Delay in milliseconds
+        });
+      </script>
 </body>
 
 </html>

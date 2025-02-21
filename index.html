@@ -19,10 +19,18 @@
 </head>
 
 <body style="background-color: black; display: flex; justify-content: center; align-items: center;">
-    <video preload="metadata" autoplay>
+    <video id="video" preload="metadata" autoplay muted>
         <source src="/videos/jyrka-dancing.mp4" type="video/mp4">
         Your browser sucks
     </video>
+
+    <script>
+        const video = document.getElementById('video');
+        
+        video.addEventListener('canplay', () => {
+          video.muted = false;
+        });
+      </script>
 </body>
 
 </html>
